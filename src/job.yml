@@ -7,9 +7,9 @@ command: >-
 inputs:
   training_data: 
     type: uri_folder 
-    path: data/experimentation/
+    path: https://github.com/prachii1908/mslearn-mlops/tree/main/src/model/
   reg_rate: 0.01
 environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
-compute: azureml:cpu-cluster
-experiment_name: diabetes-dev-folder
-description: 
+compute: mymlcompute
+experiment_name: myexp
+description: testing
